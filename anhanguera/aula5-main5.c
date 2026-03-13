@@ -25,7 +25,6 @@ int main() {
     
     }
 
-
     printf("%d elevado a %d é igual a %ld\n", x, z, res);
 
     return 0;
