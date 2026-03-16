@@ -11,16 +11,12 @@ int main(){
         if (altura >= 1.70) {
             printf("Você tem acesso VIP!\n");
         }
-
         else if (altura >= 1.50) {
             printf("Bem vindo!\n");
         }
-
         else {
             printf("Acesso Negado\n");
         }
-
     }
-
     return 0;
 }
