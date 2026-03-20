@@ -25,7 +25,7 @@ int main() {
     if (numero < 0)
         printf("Numero negativo!");
     else
-        printf("resultado = %d", fatorial(numero));
+        printf("Resultado = %d", fatorial(numero));
 
     return 0;
 }
