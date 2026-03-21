@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-//Solicitando ao usuário os três numeros inteiros separadamente
+//Solicitando ao usuário três numeros inteiros separadamente.
 
 int main() {
     
     int x, y, z;
-
+   
      printf("Digite o primeiro número inteiro: \n");
      scanf("%d", &x);
 
@@ -17,7 +17,8 @@ int main() {
 
 
      //Definindo as variáveis referentes aos resultados dos cálculos de soma, subtração, 
-     //multiplicação e divisão dos três números. Logo após, informando o resultado.
+     //multiplicação e divisão dos três números. Lembrando também de validar se não foi enviado
+     //nenhum 0 que impediria a execução da divisão. Logo após, informando o resultado.
 
      int a = x + y + z;
         printf("\nO resultado da soma dos números é: %d.", a);
@@ -28,10 +29,13 @@ int main() {
      int c = x * y * z;
         printf("\nO resultado da multiplicação dos números é: %d.", c);
 
-     int d = x / y / z;
+     if (y != 0 && z != 0) {
+        int d = x / y / z;
         printf("\nO resultado da divisão dos números é: %d.", d);
+     } else { 
+        printf("\nNão é possível fazer a divisão por zero.");
+     }
 
-    
      //Fazendo a verificação relacional se o primeiro número é maior que o segundo,
      //e, se o segundo é menor que o terceiro.
 
