@@ -11,9 +11,7 @@ int fatorial(int n) {
         }
     }    
     
-    
     return res;
-
 }
 
 int main() {
