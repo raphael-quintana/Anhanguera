@@ -9,7 +9,8 @@ int main() {
     printf("Digite um número que vou somando para você, ou 0 para sair.\n");
     scanf("%d", &entrada);
     
-    //Laço while de repetição (teste no início).
+    //Laço while de repetição (teste no início), adicionando acumulador e
+    //contador.
 
     while (entrada != 0) {   
 
@@ -18,7 +19,7 @@ int main() {
             contDigitosSomados++;
         } 
         
-        //Breve tratamento de erros.
+        //Breve tratamento de erros para evitar números negativos.
 
         else {
             printf("Não somo com negativos :( Tente novamente!\n");
@@ -31,7 +32,7 @@ int main() {
 
     }
 
-//Resultado.
+//Resultado da soma total, e contagem de quantos números foram digitados.
 
 printf("\nA soma de todos os números foi %d, você digitou %d números. \n\n",
          soma, contDigitosSomados);
