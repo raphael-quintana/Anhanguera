@@ -26,7 +26,7 @@ int main () {
     
     /*Finalizando o relatório semanal com o valor total de vendas feitas durante a
     semana.*/
-    
+
     printf("\nO Total de vendas da semana foi de %d reais!\n\n", somaVendaSemana);
 
     return 0;
