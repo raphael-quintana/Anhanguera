@@ -31,7 +31,7 @@ int main(){
     printf("Seu desconto foi de %.2f.\n", desconto);
 
     float liquido = calcular_salario_liquido(bruto, desconto);
-    printf("Seu salário líquido é de %.2f.\n", liquido);
+    printf("Seu salário líquido é de %.2f.\n\n", liquido);
 
 
     return 0;
